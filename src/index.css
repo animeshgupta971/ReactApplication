@@ -9,19 +9,44 @@
 .text-center{
   text-align: center;
 }
+.spacebar{
+  margin-bottom: 3rem;
+}
+.uppercase{
+  text-transform: uppercase;
+}
+.heading-h2{
+  font-size: 36px;
+  margin-bottom: 2rem;
+  color: #dc3545;
+}
 /* ===================Navbar ===================*/
 
 nav.navbar-container{
   background: antiquewhite;
   text-transform: uppercase;
 }
+ul.nav--wrapper {
+  list-style: none;
+  display: flex;
+  gap: 50px;
+  text-transform: uppercase;
+  background-color: antiquewhite;
+  justify-content: center;
+  padding: 10px 0;
+  margin: 0;
+}
 
+a.nav--link {
+  text-decoration: none;
+  color: #000;
+}
 
 
 /* ===================Navbar ===================*/
 
 .left-intro {
-  min-height: 450px;
+  min-height: 80vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -35,19 +60,90 @@ nav.navbar-container{
   background: aliceblue;
 }
 
+/* Skills */
+.m-progress {
+  margin: 20px auto;
+  padding: 0;
+  height: 20px;
+  overflow: hidden;
+  background: #e5e5e5;
+  border-radius: 30px;
+}
+.m-w80{
+  min-width: 80%;
+}
+.skilss-progressbar {
+  width: 60%;
+  margin: auto;
+}
+.m-bar {
+  position: relative;
+  float: left;
+  height: 100%;
+  background: cornflowerblue;
+}
+
+.m-percent {
+	position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  margin:0;
+  font-family:tahoma,arial,helvetica;
+  font-size: 16px;
+    color: white;
+    font-weight: 600;
+
+}
+.skills-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.skills-item {
+  flex-basis: 22%;
+  width: 22%;
+  background: blue;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 250px;
+  text-transform: uppercase;
+  flex-grow: 1;
+}
+.skills-item h2 {
+  min-width: 100%;
+  text-align: center;
+}
 /* ===================Mobile Media Query ===================*/
 @media(max-width:600px){
   /* ===================Navbar ===================*/
-
-
+  .introduction {
+    flex-direction: column;
+}
+.skilss-progressbar {
+  width: 90%;
+  margin: auto;
+}
+  ul.nav--wrapper {
+   flex-direction: column;
+   gap: 20px;
+   text-align: center;
+   display: none;
+  }
 .col-md-6.left-intro {
-  padding: 50px 0;
+  padding: 100px 0;
   min-height: auto;
 
 }
 .right-intro {
   min-height: auto;
 
+}
+.skills-item{
+  min-width: 100%;
 }
 }
 

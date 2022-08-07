@@ -1,14 +1,22 @@
-import './App.css';
+import React from 'react';
+import { BrowserRouter,Route,Routes } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Introduction from './components/introduction';
-import Navbar from './components/navbar';
-import Footer from './components/footer';
+import About from './components/About';
+import TechnicalSkills from './components/TechnicalSkills';
+import Navbar from './components/Navbar';
+import Services from './components/Services';
 function App() {
   return (
     <>
-<Navbar />
-<Introduction/>
-<Footer />
+    <Navbar/>
+    <About/>
+<TechnicalSkills/>
+<Services></Services>
+      <BrowserRouter>
+        <Routes>
+          <Route exact path='/about' element={<About/>} />
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }
