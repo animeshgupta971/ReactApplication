@@ -1,0 +1,53 @@
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+.main-heading{
+  color: #f00;
+}
+.text-center{
+  text-align: center;
+}
+/* ===================Navbar ===================*/
+
+nav.navbar-container{
+  background: antiquewhite;
+  text-transform: uppercase;
+}
+
+
+
+/* ===================Navbar ===================*/
+
+.left-intro {
+  min-height: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: aliceblue;
+}
+.right-intro {
+  min-height: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: aliceblue;
+}
+
+/* ===================Mobile Media Query ===================*/
+@media(max-width:600px){
+  /* ===================Navbar ===================*/
+
+
+.col-md-6.left-intro {
+  padding: 50px 0;
+  min-height: auto;
+
+}
+.right-intro {
+  min-height: auto;
+
+}
+}
+
